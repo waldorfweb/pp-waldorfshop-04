@@ -7562,7 +7562,8 @@ a {
 
 [v-cloak],
 script2,
-style2 {
+style2,
+tab-list {
   display: none !important; }
 
 .mh-1 {
@@ -8685,6 +8686,42 @@ html.ie .single-carousel .owl-item > div {
   right: auto;
   left: 15px; }
 
+.button-order {
+  display: grid; }
+
+.button-order-1 {
+  grid-area: first; }
+
+.button-order-2 {
+  grid-area: second; }
+
+.button-order-3 {
+  grid-area: last; }
+
+.order-1-3 .button-order {
+  grid-template-areas: "first" "last"; }
+
+.order-3-1 .button-order {
+  grid-template-areas: "last" "first"; }
+
+.order-1-2-3 .button-order {
+  grid-template-areas: "first" "second" "last"; }
+
+.order-1-3-2 .button-order {
+  grid-template-areas: "first" "last" "second"; }
+
+.order-2-1-3 .button-order {
+  grid-template-areas: "second" "first" "last"; }
+
+.order-2-3-1 .button-order {
+  grid-template-areas: "second" "last" "first"; }
+
+.order-3-1-2 .button-order {
+  grid-template-areas: "last" "first" "second"; }
+
+.order-3-2-1 .button-order {
+  grid-template-areas: "last" "second" "first"; }
+
 .tooltip {
   pointer-events: none; }
 
@@ -8692,9 +8729,6 @@ html.ie .single-carousel .owl-item > div {
   padding-bottom: .1px; }
   .sticky-element p:empty {
     margin-bottom: 0; }
-
-.sticky-element.is-sticky {
-  z-index: 1020 !important; }
 
 .input-unit.textarea {
   background-color: #fff; }
@@ -9270,6 +9304,9 @@ html.safari .basket-preview-content .totals {
 html.ios .basket-preview-content .totals {
   display: block !important; }
 
+body.basket-open {
+  overflow: hidden; }
+
 .cmp-totals dt,
 .cmp-totals dd {
   display: inline-block;
@@ -9314,7 +9351,7 @@ html.ios .basket-preview-content .totals {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 99;
+    z-index: 90;
     cursor: pointer;
     border-color: transparent #f7f7f9 transparent transparent;
     border-style: solid;
@@ -10013,9 +10050,13 @@ html.crios .parallax-img-container .parallax-img-container-inner[style^="backgro
   .page-singleitem .order-property-input.active {
     border-color: #28a745; }
 
-.single .order-property-selection-info-popper .btn,
-.page-singleitem .order-property-selection-info-popper .btn {
-  margin: 5px; }
+.single .order-property-selection-info-popper,
+.page-singleitem .order-property-selection-info-popper {
+  top: 0;
+  right: 0; }
+  .single .order-property-selection-info-popper .btn,
+  .page-singleitem .order-property-selection-info-popper .btn {
+    margin: 4px; }
 
 .availability-1 {
   color: #fff;
@@ -10110,8 +10151,10 @@ html.crios .parallax-img-container .parallax-img-container-inner[style^="backgro
       visibility: hidden; }
       .order-property-slider .order-property-slider-inner > div.active {
         visibility: visible; }
-    .order-property-slider .order-property-slider-inner .form-check {
-      padding-left: 1.35rem; }
+  .order-property-slider .form-check {
+    margin-bottom: 15px; }
+  .order-property-slider .checkbox-or-radio {
+    top: -45%; }
   .order-property-slider .order-property-slider-controls {
     display: flex;
     flex-direction: row; }
@@ -11043,6 +11086,17 @@ html.ie .widget-image-carousel .widget-inner .carousel-item .img-cover {
     .widget-live-shopping .thumb-image .prop-1-1 {
       padding-bottom: 50%; } }
 
+.widget-live-shopping .thumb-content {
+  display: block;
+  width: auto;
+  padding-top: 0; }
+
+.widget-live-shopping .thumb-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  font-weight: initial; }
+
 .widget-newsletter > .widget-inner {
   padding-right: 0;
   padding-left: 0; }
@@ -11125,6 +11179,10 @@ html.safari .widget-grid .widget-inner-stacked .widget-inner {
 .breadcrumbs {
   background-color: #e3e7eb; }
 
+.language-detection {
+  z-index: 200 !important;
+  top: 0; }
+
 /* settings */
 .navbar {
   background-color: #f8f9fa; }
@@ -11135,7 +11193,7 @@ html.safari .widget-grid .widget-inner-stacked .widget-inner {
     list-style: none; }
 
 .navbar-brand img {
-  max-height: 3rem; }
+  max-height: 42px; }
 
 .navbar-toggler {
   margin-left: auto; }
@@ -11291,6 +11349,8 @@ body.menu-is-visible {
   .mobile-navigation .breadcrumb {
     font-size: .8em;
     background: #212529; }
+    .mobile-navigation .breadcrumb .breadcrumb-item {
+      padding-right: .5rem; }
     .mobile-navigation .breadcrumb li {
       display: inline-block;
       padding: .8rem 0;
@@ -12840,19 +12900,6 @@ header .widget {
   .cmp-address-list .items:not(.items-empty) {
     cursor: pointer; }
 
-.cmp-address-list .dropdown-toggle::after {
-  position: absolute;
-  top: 80%;
-  right: 1.5rem;
-  z-index: 1;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-
-.cmp-address-list .items.open .dropdown-toggle {
-  border-bottom: none;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0; }
-
 .cmp-address-list .dropdown-menu {
   width: 100%;
   padding: 0;
@@ -12890,14 +12937,12 @@ header .widget {
   padding: 1em;
   margin-bottom: 0;
   cursor: pointer; }
+  @media (max-width: 575.98px) {
+    .cmp-address-list .item-inner {
+      display: block; } }
 
 .cmp-address-list .item-controls {
   display: flex; }
-  .cmp-address-list .item-controls .item-edit .fa {
-    padding-top: .3rem;
-    padding-left: .1rem; }
-  .cmp-address-list .item-controls .item-remove .fa {
-    padding-top: .1rem; }
   .cmp-address-list .item-controls .fa {
     float: none;
     transition: all 0.2s ease-in-out; }
@@ -12907,8 +12952,7 @@ header .widget {
   .cmp-address-list .item-controls .btn {
     width: 2.2rem;
     height: 2.2rem;
-    padding: 0;
-    margin-left: 5px; }
+    padding: 0; }
 
 .cmp-address-list .item-content {
   display: inline-block;
@@ -12932,7 +12976,7 @@ header .widget {
       .add-item button {
         width: 50px;
         min-width: auto !important;
-        height: 74px; } }
+        height: 54px; } }
   @media (min-width: 576px) {
     .add-item {
       top: 1em;
@@ -13285,7 +13329,7 @@ html.ie .confirmation-order-list .cmp-order-item {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 5rem;
+    min-height: 5rem;
     padding: .5em;
     margin-bottom: 0;
     overflow: hidden;

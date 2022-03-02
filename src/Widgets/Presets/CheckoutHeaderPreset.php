@@ -1,6 +1,6 @@
 <?php
 
-namespace Waldorfshop3\Widgets\Presets;
+namespace Waldorfshop4\Widgets\Presets;
 
 use Ceres\Config\CeresConfig;
 use Ceres\Widgets\Helper\PresetHelper;
@@ -27,7 +27,7 @@ class CheckoutHeaderPreset implements ContentPreset
         if (strpos($companyLogo, 'http') !== 0 && strpos($companyLogo, 'layout/') !== 0) {
             $companyLogo = pluginApp(Application::class)->getUrlPath('Ceres') . '/' . $companyLogo;
         }
-        $preset->createWidget("Waldorfshop3::CheckoutHeaderWidget")
+        $preset->createWidget("Waldorfshop4::CheckoutHeaderWidget")
             ->withSetting("companyLogoUrl", $companyLogo);
 
 

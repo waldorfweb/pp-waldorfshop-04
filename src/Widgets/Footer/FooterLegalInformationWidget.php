@@ -1,10 +1,10 @@
 <?php
 
-namespace Waldorfshop3\Widgets\Footer;
+namespace Waldorfshop4\Widgets\Footer;
 
 use Ceres\Widgets\Helper\BaseWidget;
 
 class FooterLegalInformationWidget extends BaseWidget
 {
-    protected $template = "Waldorfshop3::Widgets.Footer.FooterLegalInformationWidget";
+    protected $template = "Waldorfshop4::Widgets.Footer.FooterLegalInformationWidget";
 }
