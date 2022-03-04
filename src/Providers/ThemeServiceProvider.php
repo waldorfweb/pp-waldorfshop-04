@@ -1,5 +1,6 @@
 <?php
 namespace Waldorfshop4\Providers;
+use Plenty\Modules\ContentCache\Contracts\ContentCacheQueryParamsRepositoryContract;
 use Plenty\Plugin\ServiceProvider;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
@@ -96,6 +97,11 @@ class ThemeServiceProvider extends ServiceProvider
                 return false;
             }, self::PRIORITY);
         }
+        // Override item card
+        $dispatcher->listen("IO.Resources.Import", function(ResourceContainer $container)
+        {
+            $container->addScriptTemplate('Waldorfshop4::ItemList.Components.CategoryItem');
+        },0);
         // Override shopping cart
         if (in_array("basket", $enabledOverrides) || in_array("all", $enabledOverrides))
         {
@@ -331,5 +337,25 @@ class ThemeServiceProvider extends ServiceProvider
                 $container->setNewComponentTemplate('Waldorfshop4::Customer.Components.UserLoginHandler');
             }
         }, self::PRIORITY);
+
+        /** @var ContentCacheQueryParamsRepositoryContract $contentCacheQueryParamsRepository */
+        $contentCacheQueryParamsRepository = pluginApp(ContentCacheQueryParamsRepositoryContract::class);
+        $contentCacheQueryParamsRepository->registerExcluded([
+            'gclid',
+            'dclid',
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_term',
+            'utm_content',
+            'wbraid',
+            'fbclid',
+
+            'vmtrack_id',
+            'vmst_id',
+            'idealoid',
+            'li_fat_id',
+            'msclkid',
+        ]);
     }
 }
