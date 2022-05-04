@@ -1,7 +1,7 @@
 <script type="x/template" id="vue-change-payment-method">
     <div>
         <!-- MyAccount -->
-        <div class="button-spacer" v-if="currentTemplate == 'tpl.my-account'">
+        <div class="button-spacer" v-if="currentTemplate == 'tpl.my-account'" {{ set_testing_attr("data-testing", "change-payment-my-account") }}>
 
             <div v-if="changePossible" class="btn btn-primary btn-appearance btn-block" @click="openPaymentChangeModal()">
                 <span>{{ trans("Ceres::Template.orderHistoryChangePayment") }}</span>
@@ -43,7 +43,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title">{{ trans("Ceres::Template.orderHistoryChooseNewPayment") }}</h4>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" @click="closeModal()">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="{{ trans("Ceres::Template.closeIcon") }}" @click="closeModal()">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>

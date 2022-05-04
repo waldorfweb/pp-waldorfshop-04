@@ -1,10 +1,10 @@
 {
     "name": "Waldorfshop4",
     "license": "AGPL-3.0",
-    "version": "5.0.45",
+    "version": "5.0.49",
     "repository": {
         "type": "git",
-        "url": "https://github.com/waldorfweb/pp-waldorfshop-03.git"
+        "url": "https://github.com/waldorfweb/pp-waldorfshop-04.git"
     },
     "scripts": {
         "start": "webpack --watch --progress",
@@ -38,6 +38,7 @@
         "autoprefixer": "^8.6.5",
         "babel-eslint": "^10.1.0",
         "babel-loader": "^8.1.0",
+        "copy-webpack-plugin": "^6.4.1",
         "css-loader": "^3.5.3",
         "cypress": "^8.5.0",
         "cypress-file-upload": "^4.1.1",
@@ -50,11 +51,11 @@
         "glob": "^7.1.6",
         "mini-css-extract-plugin": "^0.8.2",
         "moment-locales-webpack-plugin": "^1.2.0",
-        "node-sass": "^4.14.1",
         "postcss": "^6.0.21",
         "postcss-loader": "^3.0.0",
         "postcss-scss": "^1.0.5",
         "q": "^1.5.1",
+        "sass": "^1.49.9",
         "sass-loader": "^7.3.1",
         "serialize-javascript": "^3.1.0",
         "stylelint": "^12.0.1",
@@ -67,7 +68,7 @@
     },
     "dependencies": {
         "bootstrap": "4.4.1",
-        "Ceres": "git+https://git@github.com/plentymarkets/plugin-ceres.git#5.0.45",
+        "Ceres": "git+https://git@github.com/plentymarkets/plugin-ceres.git#5.0.49",
         "core-js": "^3.6.5",
         "custom-event-polyfill": "^1.0.0",
         "dayjs": "^1.8.26",
@@ -78,7 +79,6 @@
         "lodash": "^4.17.21",
         "owl.carousel": "2.2.0",
         "popper.js": "^1.16.1",
-        "swiper": "^4.5.0",
         "vue": "^2.6.12",
         "vue-lazy-hydration": "^2.0.0-beta.4",
         "vue-template-compiler": "^2.6.12",
