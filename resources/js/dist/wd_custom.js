@@ -35,7 +35,12 @@ $(window).on("load", function() {
             if ($(".weitereinkaufen").length) {
                 //console.log('exist');
             } else {
-                $('#add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
+                $(':lang(de) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>weiter einkaufen</button>');
+                $(':lang(fr) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continuer les achats</button>');
+                $(':lang(en) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continue shopping</button>');
+                $(':lang(nl) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>verder winkelen</button>');
+                $(':lang(it) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continuare a fare acquisti</button>');
+                $(':lang(es) #add-item-to-basket-overlay .modal-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>seguir comprando</button>');
             }
         }, 1000);
     }
