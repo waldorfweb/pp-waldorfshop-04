@@ -88,6 +88,12 @@ $(window).on("load", function() {
                 $(".weitereinkaufen_cart").on("click", addweitereinkaufencc);
             } else {
                 $('.basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
+                $(':lang(de) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>weiter einkaufen</button>');
+                $(':lang(fr) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continuer les achats</button>');
+                $(':lang(en) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continue shopping</button>');
+                $(':lang(nl) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>verder winkelen</button>');
+                $(':lang(it) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>continuare a fare acquisti</button>');
+                $(':lang(es) .basket-preview-footer').prepend('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen weitereinkaufen_cart"> <i aria-hidden="true" class="fa fa-shopping-bag"></i>seguir comprando</button>');
                 // Close Warenkorbpreview
                 function addweitereinkaufencc() {
                     //console.log('close last');
