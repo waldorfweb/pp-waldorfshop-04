@@ -20296,7 +20296,7 @@ img {
 /*  */
 #page-header-parent .container-max,
 #page-body .container-max {
-  max-width: 1400px;
+  max-width: 1400px !important;
 }
 
 /* Warenkorb */
