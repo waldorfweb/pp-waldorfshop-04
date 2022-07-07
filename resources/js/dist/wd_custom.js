@@ -263,7 +263,37 @@ $(window).on("load", function() {
             $(this).css('display', 'block');
             $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Bilddatenbank/Grafiken/Piktogramme/2021/waldorfkind.png" alt="Waldorfkind" height:100%; width:"auto">');
         }
+        if ($(this).text() == 'Glutenfrei') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/badge/MOGLi_glutenfrei_badge.png" alt="Handemade" height:100%; width:"auto">');
+        }
+        if ($(this).text() == 'Laktosefrei') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/badge/MOGLi_laktosefrei_badge.png" alt="Demeter" height:100%; width:"auto">');
+        }
+        if ($(this).text() == 'Vegan') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/badge/MOGLi_vegan_badge.png" alt="Demeter" height:100%; width:"auto">');
+        }
+        if ($(this).text() == 'Demeter') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/Layout/Demeter_Logo.svg" alt="Demeter" height:100%; width:"auto">');
+            $(this).addClass('bio-demeter');
+            $(this).appendTo('.siegel-cont-1');
+        }
+        if ($(this).text() == 'Bio-Siegel') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/Layout/Bio-Siegel-EG-O_ko-VO-Deutschland.svg" alt="Bio EU" height:100%; width:"auto">');
+            $(this).addClass('bio-nicht-eu');
+            $(this).appendTo('.siegel-cont-2');
+        }
 
+        if ($(this).text() == 'EU-Bio-Siegel') {
+            $(this).css('display', 'block');
+            $(this).html('<img src="https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Mogli/Layout/Organic-Logo.svg" alt="Bio EG" height:100%; width:"auto">');
+            $(this).addClass('bio-eu');
+            $(this).appendTo('.siegel-cont-3');
+        }
     });
 
 
