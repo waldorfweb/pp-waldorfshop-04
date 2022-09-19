@@ -15,14 +15,6 @@ function eraseCookie(key) {
     setCookie(key, keyValue, '-1');
 }
 
-$(function() {
-
-});
-
-
-
-
-
 
 //require(['jQuery'], function ($) {
 //$(document).ready(function(){
@@ -48,34 +40,13 @@ $(window).on("load", function() {
     $(".add-to-basket-lg-container").on("click", addweitereinkaufen);
 
 
-    //Warenkorb
-    // OrderTotals find and replace - patch PMs Mehrsprachigkeit
-    // $("dt").text(function(index, text) {
-    //     //alert('test');
-    //     var text = $(this).text();
-    //     $('dt:contains("Warenwert ((Brutto))")').text('Warenwert (Brutto)');
-    //     $('dt:contains("Warenwert ((Netto))")').text('Warenwert (Netto)');
-    //     $('dt:contains("Versandkosten ((Brutto))")').text('Versandkosten (Brutto)');
-    //     $('dt:contains("Versandkosten ((Netto))")').text('Versandkosten (Netto)');
-    //     $('dt:contains("Gesamtsumme ((Brutto))")').text('Gesamtsumme (Brutto)');
-    //     $('dt:contains("Gesamtsumme ((Netto))")').text('Gesamtsumme (Netto)');
-    // });
+
 
     //Warenkorb Slidin - weiter einkaufen
 
     function addweitereinkaufen_cart() {
 
-        // OrderTotals find and replace - patch PMs Mehrsprachigkeit
-        // $("dt").text(function(index, text) {
-        //     //alert('test');
-        //     var text = $(this).text();
-        //     $('dt:contains("Warenwert ((Brutto))")').text('Warenwert (Brutto)');
-        //     $('dt:contains("Warenwert ((Netto))")').text('Warenwert (Netto)');
-        //     $('dt:contains("Versandkosten ((Brutto))")').text('Versandkosten (Brutto)');
-        //     $('dt:contains("Versandkosten ((Netto))")').text('Versandkosten (Netto)');
-        //     $('dt:contains("Gesamtsumme ((Brutto))")').text('Gesamtsumme (Brutto)');
-        //     $('dt:contains("Gesamtsumme ((Netto))")').text('Gesamtsumme (Netto)');
-        // });
+
 
         setTimeout(function() {
             if ($(".weitereinkaufen_cart").length) {
@@ -110,7 +81,6 @@ $(window).on("load", function() {
 
 
 
-    // $('.basket-preview-footer').append('<button type="button" data-dismiss="modal" aria-label="Close"  class="btn btn-outline-primary btn-medium mr-2 weitereinkaufen"> <i aria-hidden="true" class="fa fa-shopping-bag"></i> weiter einkaufen </button>');
 
 
     //Kategorieseite Beschreibung button
@@ -140,9 +110,6 @@ $(window).on("load", function() {
 
     $('.popupstore li ').prepend('<i class="fa fa-lg mobile-icon-right fas fa-star " style="color:#b92a38; position: absolute; right: 0px;  font-size: 36px; top: -4px; z-index:10"></i>');
 
-
-
-    //$('.add-to-basket-lg-container i').replaceWith( "<i class='fa fa-lg mobile-icon-right fas fa-star' style='color:#b92a38'></i>" );
 
 
     // Popupstore Hack end
@@ -304,33 +271,7 @@ $(window).on("load", function() {
             return this.alt;
         }
     });
-    //$("#close-nb").click(function(){
-    //  $("#notificationbar").hide();
-    //});
 
-    //$('.top-bar.wd_search #notificationbar').remove();
-
-
-
-    //if(localStorage.getItem("close-nb") != "true"){
-    //
-    //		$('.top-bar.header-fw.wd_search').css('top','64px');
-    //		   	$('.wd_menu.megamenu').css('top','102px');
-    //	} else {
-    //		$('.top-bar.header-fw.wd_search').css('top','38px');
-    //	   $('.wd_menu.megamenu').css('top','82px');
-    //	}
-
-
-    //	$("#close-nb").click(function(){
-    //	  $('.top-bar.header-fw.wd_search').css('top','38px');
-    //	   $('.wd_menu.megamenu').css('top','82px');
-    //	});
-
-
-
-    //alert('test');
-    //alert('test');
     //Shipping Method
     //$('#ShippingProfileID267').addClass('selbstabholericon');
     $('img[alt="DHL"]').remove();
