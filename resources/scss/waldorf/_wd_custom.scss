@@ -3942,3 +3942,8 @@ a[data-testing="cookie-bar-show-more-information"] {
 button[data-testing="cookie-bar-save"] {
     display: none !important;
 }
+
+.controls-list .nav-link {
+    display: inline-block;
+    padding: inherit !important;
+}

@@ -21002,6 +21002,11 @@ button[data-testing=cookie-bar-save] {
   display: none !important;
 }
 
+.controls-list .nav-link {
+  display: inline-block;
+  padding: inherit !important;
+}
+
 /* CSS after update ceres 5
 rot #b92a38
 	grün #42974c
