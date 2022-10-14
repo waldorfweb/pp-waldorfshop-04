@@ -21032,6 +21032,408 @@ button[data-testing=cookie-bar-save] {
   display: none !important;
 }
 
+/* Bugfixes juni 2022 */
+.cmp-country-settings li a,
+.cmp-currency-select li a {
+  color: white;
+  font-size: 10px;
+}
+
+.language-settings .list-title {
+  color: white;
+}
+
+.zus-information {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  max-width: 1024px;
+  margin-left: 0px;
+}
+
+.zus-information p {
+  margin: 6px 0px;
+}
+
+.zus-information.allergene p,
+.zus-information.allergene p span {
+  font-weight: bold !important;
+}
+
+.shop-aktion span {
+  color: #b92a38;
+}
+
+.tab-content p:empty {
+  display: none;
+}
+
+/* header zu breit */
+@media (min-width: 1380px) {
+  .brand-wrapper {
+    max-width: 185px;
+  }
+}
+/* UVP  */
+.page-singleitem small,
+.page-singleitem .small,
+.page-singleitem .btn-labeled {
+  font-size: 100%;
+}
+
+/* category images box */
+.page-category-item .widget_baby:before {
+  content: " ";
+  background-image: url(https://source.waldorfshop.eu/images/background_frame_cat_01.png);
+  background-size: 100% 100%;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.widget-grid.widget-three-col {
+  width: 100%;
+  margin: 0 2px 40px;
+}
+
+.page-category-item .widget-image-box-block-caption a,
+.page-category-item .widget-image-box-block-caption a p {
+  font-family: Custom-Font, Helvetica, Arial, sans-serif !important;
+  font-size: 12px;
+}
+
+.widget_afterall {
+  /* margin: 0 -30px; */
+  max-width: 1400px;
+  padding: 30px 20px;
+}
+
+.form-mask {
+  -webkit-mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask.svg);
+  mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.form-mask-header {
+  -webkit-mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-header.svg);
+  mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-header.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+@media (min-width: 1230px) {
+  .form-mask-box {
+    -webkit-mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-box.svg);
+    mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-box.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
+@media (min-width: 421px) and (max-width: 576px) {
+  .form-mask-box {
+    -webkit-mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-box.svg);
+    mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask-box.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
+@media (min-width: 390px) and (max-width: 420px) {
+  .form-mask-box {
+    -webkit-mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask.svg);
+    mask-image: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/form-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
+.b2b-button {
+  text-align: center;
+}
+
+.b2b-button a {
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+/* bulletpoints */
+.bulletpoints span::marker {
+  content: " ";
+}
+
+.bulletpoints span {
+  position: relative;
+}
+
+.bulletpoints span::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #b92a38;
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: -20px;
+}
+
+/* bewertung */
+.feedback-category-view {
+  display: none !important;
+}
+
+/* checkout katalog */
+.page-checkout .widget_katalog .widget-caption {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* notification banner */
+.not-banner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.not-banner h5 {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* cookienotice */
+@media (min-width: 992px) {
+  button[data-testing=cookie-bar-accept-all] {
+    top: 100px !important;
+    bottom: 0px;
+    max-width: 354px;
+  }
+  a[data-testing=cookie-bar-show-more-information] {
+    display: block !important;
+    margin-right: -270px;
+    position: absolute;
+    right: -440px;
+    top: 160px;
+    margin: 0;
+    z-index: 999999999;
+    /* padding: 10px 0vw 10px; */
+    margin: 0 0 0 0;
+    left: 102%;
+    background: #c7c7c7;
+    border-radius: 50px;
+    width: 29vw;
+    color: white !important;
+    font-size: 86%;
+    max-width: 354px;
+    -webkit-filter: grayscale(1) !important;
+    filter: grayscale(1) !important;
+  }
+}
+/* google form */
+/* .ff-sec-root img {
+    max-width: 280px !important;
+    margin: 0 auto !important;
+} */
+.ff-title {
+  font-family: Custom-Font, Helvetica, Arial, sans-serif !important;
+  color: #b92a38 !important;
+}
+
+/* Checkbox Caldera form css */
+.ff-section [type=checkbox] {
+  position: relative;
+  left: 15px;
+  top: -4px;
+  z-index: 0;
+  -webkit-appearance: none;
+}
+
+.ff-section [type=checkbox] + label {
+  position: absolute;
+}
+
+.ff-section [type=checkbox] + label::before {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid #b92a38;
+  background-color: #fff;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 10px;
+  z-index: 5;
+  position: relative;
+  margin-top: 2px;
+}
+
+.ff-section [type=checkbox]:checked + label::before {
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  background-color: #b92a38;
+}
+
+.ff-section .ff-section-header {
+  font-size: 22px !important;
+}
+
+.ff-section .ff-powered-img {
+  margin-top: 100px !important;
+  margin-bottom: 40px !important;
+}
+
+@media (max-width: 567px) {
+  .ff-form .ff-item label {
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 6px;
+    float: left;
+    line-height: 180%;
+    display: contents;
+  }
+  .ff-section [type=checkbox] + label::before {
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid #b92a38;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 10px;
+    z-index: 5;
+    position: relative;
+    margin-top: 2px;
+    margin-left: -40px;
+  }
+  .ff-section [type=checkbox] {
+    position: relative;
+    left: 15px;
+    top: -4px;
+    z-index: 0;
+    display: block;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+  }
+  .ff-form .ff-check-table {
+    display: table;
+    width: 100%;
+    padding: 20px;
+  }
+}
+/* katalog landing page */
+.l-button .btn-appearance {
+  padding: 12px 20px;
+  font-size: 105%;
+  border-radius: 6px !important;
+  overflow: hidden;
+}
+
+.l-box-wrapper.baby {
+  margin: 40px -15px 40px -15px !important;
+  width: 102% !important;
+}
+
+@media (max-width: 576px) {
+  /* .l-box-wrapper .block-caption {
+      font-size: 14px !important;
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      padding: 0px 10px !important;
+  } */
+  .widget-two-col .col-xl-6.widget-stacked-mobile {
+    /* padding-left: 0px !important;
+    padding-right: 0px !important; */
+  }
+  .l-tvscreen,
+.l-box-wrapper.baby {
+    width: 109% !important;
+    margin: 40px -15px 40px -15px !important;
+  }
+  .l-box-wrapper.baby .widget-stacked-mobile {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .l-tvscreen.last {
+    margin-top: -40px !important;
+  }
+  .l-button .btn-appearance {
+    width: 100%;
+  }
+  .bildunter {
+    font-size: 13px;
+  }
+  .bildunter .widget-inner {
+    padding-top: 0px;
+  }
+  .category-4166 .container-max > .row > .col {
+    padding: 0px 15px;
+  }
+}
+/* katalog 2022 hier vorbestellen button */
+.hier_vorbestellen a {
+  color: white !important;
+}
+
+/* responsive iframe für google forms */
+.responsive-iframe-cal p:empty,
+.responsive-iframe-gewinn p:empty {
+  display: none !important;
+}
+
+.responsive-iframe-cal {
+  border: none;
+  width: 100%;
+  margin: 0 0 0 1%;
+  height: 1400px;
+}
+
+.responsive-iframe-gewinn {
+  border: none;
+  width: 100%;
+  margin: 0 0 0 1%;
+  height: 2800px;
+}
+
+.responsive-iframe-cal iframe {
+  height: 1400px;
+}
+
+.responsive-iframe-gewinn iframe {
+  height: 2800px;
+}
+
+@media (max-width: 992px) {
+  .responsive-iframe-cal {
+    height: 1400px;
+  }
+  .responsive-iframe-cal iframe {
+    height: 1400px;
+  }
+  .responsive-iframe-gewinn {
+    height: 3200px;
+  }
+  .responsive-iframe-gewinn iframe {
+    height: 3200px;
+  }
+}
+@media (max-width: 567px) {
+  .responsive-iframe-cal {
+    height: 1500px;
+  }
+  .responsive-iframe-cal iframe {
+    height: 1900px;
+  }
+  .responsive-iframe-gewinn {
+    height: 4400px;
+  }
+  .responsive-iframe-gewinn iframe {
+    height: 4400px;
+  }
+}
 /* CSS after update ceres 5
 rot #b92a38
 	grün #42974c
