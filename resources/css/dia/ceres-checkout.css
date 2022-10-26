@@ -22131,6 +22131,7 @@ button[data-testing=cookie-bar-save] {
 /* katalog 2022 hier vorbestellen button */
 .hier_vorbestellen a {
   color: white !important;
+  display: inherit;
 }
 
 /* responsive iframe für google forms */
