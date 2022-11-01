@@ -22191,6 +22191,72 @@ button[data-testing=cookie-bar-save] {
     height: 4400px;
   }
 }
+@font-face {
+  font-display: swap;
+}
+/* aus https://source.waldorfshop.eu/c5/css/wd_staging.css */
+/* checkout katalog */
+.widget_katalog_checkout .add-to-basket-lg-container {
+  display: none !important;
+}
+
+.widget_katalog_checkout .widget-item-list-caption {
+  font-family: "Custom-Font";
+  padding: 6px;
+  border-radius: 4px;
+  /* overflow: hidden; */
+}
+
+.widget_katalog_checkout .widget-item-list-caption p:after {
+  content: "";
+  position: absolute;
+  /* top: 100%; */
+  top: 28px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-top: solid 20px #b92a38;
+  border-left: solid 20px transparent;
+  border-right: solid 20px transparent;
+}
+
+@media (min-width: 992px) {
+  .widget_katalog_checkout {
+    /* max-width: 60%; */
+    margin: 0 auto;
+  }
+}
+@media (min-width: 577px) {
+  .widget_katalog_checkout {
+    /* max-width: 60%; */
+    margin: 0 auto;
+  }
+  .widget_katalog_checkout .cmp-product-thumb .thumb-image {
+    max-width: 60%;
+    margin: 20px auto;
+  }
+}
+/* iframe gewinnspiel */
+@media (max-width: 567px) {
+  .category-4175 .responsive-iframe-cal {
+    height: 1900px;
+  }
+}
+/* @media (max-width:992px) {
+    .controls-list .nav-link {
+        display: inline-block;
+        padding: 1rem 0.5rem !important;
+    }
+    #controlsList .d-none {
+        display: inline !important;
+    }
+} */
+.navbar {
+  transition: none !important;
+}
+
 /* CSS after update ceres 5
 rot #b92a38
 	grün #42974c
