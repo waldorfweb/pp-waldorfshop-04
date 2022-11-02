@@ -115,20 +115,20 @@ $(window).on("load", function() {
     // Popupstore Hack end
     //remove canonical tag
     //$(".cano").removeClass("cano");
-    $(".search-input ").attr("placeholder", "Suche");
-    if ($("html[lang='nl']").length) {
-        $(".search-input ").attr("placeholder", "Zoeken");
-    } else if ($("html[lang='en']").length) {
-        $(".search-input ").attr("placeholder", "Search");
-    } else {
-        $(".search-input ").attr("placeholder", "Suche");
-    }
+    // $(".search-input ").attr("placeholder", "Suche");
+    // if ($("html[lang='nl']").length) {
+    //     $(".search-input ").attr("placeholder", "Zoeken");
+    // } else if ($("html[lang='en']").length) {
+    //     $(".search-input ").attr("placeholder", "Search");
+    // } else {
+    //     $(".search-input ").attr("placeholder", "Suche");
+    // }
 
-    if ($("body").hasClass("item-10000621")) {
-        //alert('test3');
-        //alert('test4');
+    // if ($("body").hasClass("item-10000621")) {
+    //     //alert('test3');
+    //     //alert('test4');
 
-    }
+    // }
 
     $('.normalmenu .level2').each(function() {
         $(this).siblings(".level1").addClass('navpfeil');
@@ -290,7 +290,7 @@ $(window).on("load", function() {
     //Blog
 
 
-    $('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu" target="_blank" title="Blog zum Waldorfshop"><i class="fas fa-blog"></i><span class="telefonnummer">Blog</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
+    //$('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu" target="_blank" title="Blog zum Waldorfshop"><i class="fas fa-blog"></i><span class="telefonnummer">Blog</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
 
 
     if (window.location.href.indexOf("https://www.waldorfshop.eu/spielen/kaufladen/einkaufskoerbchen_4191000_6080?utm_source=newsletter&utm_medium=email&utm_campaign=Adresse%2B%C3%BCberpr%C3%BCfen#login") > -1) {
