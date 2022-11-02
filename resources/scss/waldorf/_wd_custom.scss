@@ -341,7 +341,7 @@ nav.wd_menu {
 }
 
 .always-visible-search {
-    padding-left: 280px;
+    padding-left: 0px;
 }
 
 @media(min-width:992px) {
@@ -4458,3 +4458,52 @@ transition:none !important;
 
 }
 
+/* image not found bug */
+
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/loading.gif) no-repeat
+}
+
+.lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/prev.png) left 48% no-repeat;
+    opacity: 0;
+    transition: opacity .6s
+}
+
+.lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/next.png) right 48% no-repeat;
+    opacity: 0;
+    transition: opacity .6s
+}
+
+.lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/close.png) top right no-repeat;
+    text-align: right;
+    outline: 0;
+    opacity: .7;
+    transition: opacity .2s
+}
+#countrySettings {
+    position: absolute;
+    width: 253px;
+    right: 0px;
+    margin-top: -3px !important;
+    margin: 0;
+    background: #b92a38;
+    border-radius: 0 0 5px 5px;
+    border-right: 1px solid #FBF3E6;
+}
