@@ -290,7 +290,7 @@ $(window).on("load", function() {
     //Blog
 
 
-    $('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu" target="_blank" title="Blog zum Waldorfshop"><i class="fas fa-blog"></i><span class="telefonnummer">Blog</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
+    //$('.top-bar .mx-0 .top-bar-items').prepend('<ul class="blog-entrypoint controls-list list-inline"><li class="list-inline-item"><a href="https://blog.waldorfshop.eu" target="_blank" title="Blog zum Waldorfshop"><i class="fas fa-blog"></i><span class="telefonnummer">Blog</span></a></li><li class="kundenhotline"><a href="tel:+49 8191 9369 300"><i class="fa fa-phone"></i><span class="telefonnummer"> +49 8191 9369 300</span></a></li></ul><div class="kundenhotline"></div>');
 
 
     if (window.location.href.indexOf("https://www.waldorfshop.eu/spielen/kaufladen/einkaufskoerbchen_4191000_6080?utm_source=newsletter&utm_medium=email&utm_campaign=Adresse%2B%C3%BCberpr%C3%BCfen#login") > -1) {
@@ -358,7 +358,7 @@ $(window).on("load", function() {
 
 
     //Login Passwort Hinweis
-    //$(".modal-title, .login-view-title").append("<div class='passworthinweis'>Liebe Kunden, wie Sie vielleicht bermerkt haben ist unser neuer Webshop da. Daher müssen wir Sie leider bitten ein neues Passwort mit der Funktion \"Passwort vergessen\" zu vergeben. </div>");
+    $(".login-pwd-reset, .modal-footer").append("<div class='passworthinweis'><div>Noch kein Kundenkonto?</div><a href='/registrieren' class='btn btn-outline-primary'><i aria-hidden='true' class='fa fa-user-plus ml-1'></i>Registrieren Sie sich</div>");
 
     $("#login .login-pwd-reset form").append("<div class='passworthinweis gastbestellung'>Hier können Sie als Gast bestellen ohne sich registrieren oder anmelden zu müssen. <br /><button href=\"/anmelden\" class=\"btn btn-primary btn-appearance btn-medium\">Weiter mit Gastbestellung. <i class=\"fa fa-user-secret\"></i></button></div>");
 
