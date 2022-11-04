@@ -22348,7 +22348,7 @@ button[data-testing=cookie-bar-save] {
 
 #countrySettings {
   position: absolute;
-  width: 253px;
+  width: 100%;
   right: 0px;
   margin-top: -3px !important;
   margin: 0;
@@ -22359,6 +22359,42 @@ button[data-testing=cookie-bar-save] {
 
 #countrySettings {
   width: 100%;
+}
+
+.main-topbar-neu .always-visible-search .container-max:before {
+  content: " ";
+  display: block;
+  width: 240px;
+  height: 40px;
+  background: url(https://cdn02.plentymarkets.com/rm2ukznxe8l9/frontend/Layout/logo_shop_neu.svg);
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.navbar .brand-wrapper {
+  display: none !important;
+}
+
+.main-navbar-collapsable .mainmenu {
+  flex-flow: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+#countrySettings {
+  position: absolute;
+  width: 100%;
+  right: 0px;
+  margin-top: -3px !important;
+  margin: 0;
+  background: #b92a38;
+  border-radius: 0 0 5px 5px;
+  border-right: 1px solid #FBF3E6;
+}
+
+.language-settings .flag-icon {
+  font-size: 20px;
+  margin-right: 5px !important;
 }
 
 /* CSS after update ceres 5
